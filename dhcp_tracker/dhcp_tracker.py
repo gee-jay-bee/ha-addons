@@ -79,7 +79,7 @@ def device_tracker():
         if len(currently_watching) > 0:
             #ignoring hostname as not really reliably known!
             logger.debug('Starting ping')
-            hosts = multiping(currently_watching.keys())
+            hosts = multiping(currently_watching.keys(), count=1, timeout=1.0)
             logger.debug('Done')
             for host in hosts:
                 if not host.is_alive:
