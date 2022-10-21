@@ -1,0 +1,10 @@
+configuration:
+  mac_addresses:
+    name: MAC addresses to watch
+    description: The list of mac addresses to watch for DHCP announcements
+  enable_device_tracker:
+    name: Enable device tracking
+    description: If enabled, the addon will ping the IP address seen in DHCP and send an event to HA when there is no ping response to indicate the device is gone
+  create_device_trackers: 
+    name: Create device trackers (requires enable_device_tracker = True)
+    description: If enabled, the addon will also create a device_tracker state in HA

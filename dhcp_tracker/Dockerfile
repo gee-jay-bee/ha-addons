@@ -6,7 +6,7 @@ RUN \
     python3 tcpdump
 
 RUN python3 -m ensurepip --default-pip
-RUN pip3 install scapy requests
+RUN pip3 install scapy requests icmplib
 
 # Copy data for add-on
 COPY run.sh dhcp_tracker.py /
