@@ -1,0 +1,21 @@
+name: "DHCP tracker"
+description: >-
+  Watch for specific mac addresses, notify home assistant when they are assigned
+  an IP address
+version: "0.1.3"
+slug: "dhcp_tracker"
+init: false
+host_network: true
+homeassistant_api: true
+arch:
+  - aarch64
+  # - amd64
+  # - armhf
+  # - armv7
+  # - i386
+schema:
+  mac_addresses:
+    - str
+options:
+  mac_addresses:
+    - null
