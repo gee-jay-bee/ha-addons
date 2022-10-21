@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: GJB HA addons
-url: 'https://github.com/home-assistant/addons-example'
+url: 'https://github.com/gee-jay-bee/ha-addons'
 maintainer: gee-jay-bee
